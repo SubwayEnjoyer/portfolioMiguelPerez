@@ -1,15 +1,21 @@
 <div class="card lg:card-side  shadow-sm mb-10 ">
-  <div class="flex flex-row">
+<div class="flex md:flex-row flex-col">
   <figure
-    class="max-w-md object-cover w-1/2 rounded-2xl transition-transform hover:scale-102 border-1 border-blue-900"
+    class="max-w-md object-cover  rounded-2xl transition-transform hover:scale-102  border-1 border-blue-900"
   >
-    <img src="../../../assets/p.png" alt="Album" />
+    <img src="../../../assets/o.png" alt="Album" class="rounded-2xl" />
   </figure>
-  <div class="flex flex-col w-1/2">
-  <div class="card-body">
-    <h2 class="card-title">Peluquería</h2>
-    <p>
-      Con un equipo desarrollamos una aplicación web para la gestión de citas de una peluquería, facilitando el registro, modificación y visualización de horarios, con el fin de mejorar la organización y optimizar tiempo.
+
+
+
+
+
+  <div class="flex flex-col md:w-1/2">
+  <div class="card-body" >
+    <h2 class="card-title text-2xl">OrdenaloTodo</h2>
+    <!-- <h3 class="text-blue-400 text-xl">Programador FullStack</h3> -->
+    <p class=" ">
+      Con mi equipo desarrollamos un SaaS para PYMES que agiliza las ventas con lector de códigos de barras y genera informes detallados en Excel, optimizando la gestión comercial. La solución permite controlar inventario, analizar ventas y mejorar la productividad en negocios minoristas, todo desde una plataforma centralizada.
     <div class="flex flex-col">
     <div class="flex flex-row gap-2">
 
@@ -40,12 +46,12 @@
       <div
         class="flex items-center rounded bg-gray-300/10 px-3 py-1 text-xs font-medium leading-5 text-white gap-1"
       >
-        Prisma
+        JS
         <svg height="20" width="30" xmlns="http://www.w3.org/2000/svg">
           <image
             height="20"
             width="30"
-            href="../../../assets/prisma.svg"
+            href="../../../assets/js-svgrepo-com.svg"
           />
         </svg>
       </div>
@@ -69,12 +75,12 @@
         <div
         class="flex items-center rounded bg-gray-300/10 px-3 py-1 text-xs font-medium leading-5 text-white gap-1"
       >
-        JS
+      Sequalize
         <svg height="20" width="30" xmlns="http://www.w3.org/2000/svg">
           <image
             height="20"
             width="30"
-            href="../../../assets/js-svgrepo-com.svg"
+            href="../../../assets/sequelize-svgrepo-com.svg"
           />
         </svg>
       </div>
@@ -106,12 +112,12 @@
       <div
         class="flex items-center rounded bg-gray-300/10 px-3 py-1 text-xs font-medium leading-5 text-white gap-1"
       >
-        Tailwindcss
+        PLSQL
         <svg height="20" width="30" xmlns="http://www.w3.org/2000/svg">
           <image
             height="20"
             width="30"
-            href="../../../assets/tailwindcss-icon-svgrepo-com.svg"
+            href="../../../assets/plsql-svgrepo-com.svg"
           />
         </svg>
       </div>
@@ -123,7 +129,7 @@
   </div>
   <div class="card-actions justify-end gap-2">
     <a  target="_blank">
-      <button class="btn bg-white text-black
+      <button class="btn  bg-white text-black
       bg-gradient-to-r
           from-[#ffffff] via-[#ffffff] to-[#8b8c8d]
           bg-[length:200%_auto]
@@ -135,7 +141,8 @@
           ease-in-out
           py-3 px-6
           rounded
-          font-medium">
+          font-medium" onclick="my_modal_3.showModal()">
+
         <svg
 
           width="16"
@@ -147,11 +154,11 @@
           <image height="20" width="30" href="../../../assets/link-svgrepo-com.svg" />
 
         </svg>
-        Preview (Próximamente)
+        Video demostración
       </button>
     </a>
 
-    <a href="https://github.com/AndresGutierrezBastidas/Peluqueria-proyect" target="_blank"
+    <a href="https://github.com/OtakuQlo/ProyectoFinal" target="_blank"
     class="pr-6">
       <button class="btn bg-black text-white border-black
       bg-gradient-to-r
@@ -184,6 +191,32 @@
   </div>
 </div>
 
+</div>
 
 </div>
-</div>
+
+
+
+
+
+<dialog id="my_modal_3" class="modal">
+  <div class="modal-box max-w-none w-11/12 max-h-[90vh] h-auto p-0">
+    <div class="flex flex-col h-full">
+      <div class="mb-1 sticky top-0 bg-base-100 z-10 p-2">
+        <form method="dialog">
+          <button class="btn btn-sm btn-circle btn-ghost absolute right-2 top-2" (click)="detener()">✕</button>
+        </form>
+      </div>
+
+      <div class="flex-1 overflow-auto p-4">
+        <video #video class="w-full h-auto max-h-[80vh] rounded-lg" controls autoplay>
+          <source
+            src="../../../assets/demo4.m4"
+            type="video/mp4"
+          />
+          Your browser does not support the video tag.
+        </video>
+      </div>
+    </div>
+  </div>
+</dialog>
