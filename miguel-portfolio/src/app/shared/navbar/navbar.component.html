@@ -1,0 +1,67 @@
+<style>
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 12ch }
+  }
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: transparent }
+  }
+  .animate-typing {
+    animation:
+      typing 1.8s steps(12) 1s 1 normal both,
+      blink-caret 0.75s step-end infinite;
+  }
+  </style>
+<nav class="navbar bg-base-100 shadow-sm fixed bg-gradient-to-r from-black to-blue-900 z-50 ">
+  <div class="navbar-start ">
+
+    <a class="  ml-4 text-2xl font-mono font-medium overflow-hidden whitespace-nowrap  animate-typing" href="#sobre" style="width: 12ch">Miguel Pérez</a>
+  </div>
+  <div class="navbar-center hidden lg:flex">
+    <ul class="menu menu-horizontal px-1 flex space-x-6">
+      <li>
+        <a class="text-xl relative group" href="#experiencia">
+          Experiencia
+          <span class="absolute left-0 bottom-0 h-0.5 w-0 bg-blue-500 transition-all duration-300 group-hover:w-full"></span>
+        </a>
+      </li>
+      <li>
+        <a href="#proyectos" class="text-xl relative group">
+          Proyectos
+          <span class="absolute left-0 bottom-0 h-0.5 w-0 bg-blue-500 transition-all duration-300 group-hover:w-full"></span>
+        </a>
+      </li>
+
+      <li>
+        <a href="#about" class="text-xl relative group">
+          Sobre mí
+          <span class="absolute left-0 bottom-0 h-0.5 w-0 bg-blue-500 transition-all duration-300 group-hover:w-full"></span>
+        </a>
+      </li>
+    </ul>
+  </div>
+  <div class="navbar-end">
+    <a href="mailto:mig.perezfuentes@gmail.com">
+      <button class="btn bg-white
+      bg-gradient-to-r
+  from-[#ffffff] via-[#ffffff] to-[#8b8c8d]
+  bg-[length:200%_auto]
+  bg-left
+  border-transparent
+  text-[#464646]
+  hover:bg-right
+  hover:text-black
+  transition-all
+  duration-500
+  ease-in-out
+  py-3 px-6
+  rounded
+  font-medium">
+        <svg aria-label="Email icon" width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g stroke-linejoin="round" stroke-linecap="round" stroke-width="2" fill="none" stroke="black"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></g></svg>
+        Contáctame
+      </button>
+    </a>
+  </div>
+</nav>
+

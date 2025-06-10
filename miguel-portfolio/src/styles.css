@@ -1,1 +1,10 @@
-/* You can add global styles to this file, and also import other style files */
+@import "tailwindcss";
+@plugin "daisyui";
+
+
+
+/* Opcional: Asegurar que Inter se aplique a todo el proyecto */
+body {
+  font-family: 'Inter', sans-serif;
+}
+
